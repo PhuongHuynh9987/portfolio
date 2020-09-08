@@ -14,7 +14,7 @@ body {
 	width: 100%;
 	height: 100%;
 	background-image: url("/img/bg.jpg") fixed;
-	background-color: linear-gradient(to right, #CC8B79, #714674)
+	background: linear-gradient(to right, #CC8B79, #714674)
 	background-size: cover;
 }
 
