@@ -142,14 +142,14 @@ img {
 
 @media screen and (max-width: 600px) {
     .main {
-        display:block;
-        padding: 0;
-        margin:0;
+        display: block;
+        padding; 0;
     }
 
     .intro {
         line-height: 1rem;
         font-size: 0.6rem;
+        width: 15rem;
     }
 
     img {
@@ -160,6 +160,5 @@ img {
         display: flex;
         justify-content:right;
         margin-right: 2rem;
-
     }
 } 
