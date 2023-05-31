@@ -53,6 +53,10 @@ a {
     text-decoration: none;
 }
 
+a:visited{
+    color:rgb(108, 79, 108)
+}
+
 a:hover {
     transition: all 0.2s ease-in;
     background-color: rgba(163, 114, 177, 0.9);
@@ -111,7 +115,7 @@ img {
     .menu-nav li {
         display:none;
         margin: 0;
-        padding:0;
+        padding: 0;
     }
 
     .fa.fa-bars {
@@ -143,7 +147,7 @@ img {
 @media screen and (max-width: 600px) {
     .main {
         display: block;
-        padding; 0;
+        justify-content: left;
     }
 
     .intro {
