@@ -15,14 +15,23 @@ body{
     text-align: center;
 }
 
+.top-bar {
+    background-color: #d9cfdf;
+    position: fixed;                    /*so the top bar will  not move as we scroll*/
+    top: 0;
+    right: 0;
+    left:0;
+}
+
 .menu-nav {
     line-height: 60px;
     letter-spacing: 1.5px;
-    text-align: left;
+    text-align: right;
+    margin-right: 100px;
 }
 
 .menu-nav li {  
-    margin-right: 3rem;
+    margin-right: 1rem;
     display: inline;
     /* list-style-type: none; */
 }
@@ -67,7 +76,6 @@ a:hover {
 
 .main {
     display: flex;
-    justify-content: space-between;
     text-align: left;
     margin: 10rem;
 }
@@ -121,9 +129,9 @@ img {
     .fa.fa-bars {
         display: flex;
         justify-content:right;
-        margin-right: 3rem;
-        font-size: 3rem;
-        margin-top: 2rem;
+        font-size: 2rem;
+        padding-bottom: 1rem;
+        margin-right: 0;
     }
 
     h1 {
@@ -146,8 +154,9 @@ img {
 
 @media screen and (max-width: 600px) {
     .main {
-        display: block;
+        flex-flow: column;
         justify-content: left;
+        align-items: center;
     }
 
     .intro {
@@ -163,6 +172,8 @@ img {
     .fa.fa-bars {
         display: flex;
         justify-content:right;
-        margin-right: 2rem;
+        font-size: 1.7rem;
+        padding-bottom: 1rem;
+        margin-right: -2rem;
     }
 } 
