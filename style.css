@@ -117,7 +117,9 @@ img {
     .fa.fa-bars {
         display: flex;
         justify-content:right;
-        margin-right: 5rem;
+        margin-right: 3rem;
+        font-size: 3rem;
+        margin-top: 2rem;
     }
 
     h1 {
@@ -129,21 +131,20 @@ img {
         margin-left: 1rem;
     }
 
-
-
     .intro {
         padding: 0.2rem;
         line-height: 1rem;
         font-size: 0.6rem;
     }
+
 }
     
 
 @media screen and (max-width: 600px) {
     .main {
         display:block;
-        justify-content: center;
         padding: 0;
+        margin:0;
     }
 
     .intro {
@@ -158,6 +159,7 @@ img {
     .fa.fa-bars {
         display: flex;
         justify-content:right;
-        margin-right: 5rem;
+        margin-right: 2rem;
+
     }
 } 
