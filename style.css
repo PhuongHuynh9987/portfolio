@@ -17,25 +17,28 @@ body{
 }
 
 .top-bar {
-    background-color: #d9cfdf;
+    background-color:rgb(241, 226, 246); 
     position: fixed;                    /*so the top bar will  not move as we scroll*/
     top: 0;
     right: 0;
     left:0;
     opacity: 1;
+    box-shadow: 0 10px 50px rgba(93, 78, 92, 0.3);
 }
+
 
 .menu-nav {
     line-height: 60px;
     letter-spacing: 1.5px;
     text-align: right;
     margin-right: 100px;
-    cursor: pointer;
+
 }
 
 .menu-nav li {  
     margin-right: 1rem;
     display: inline;
+    cursor: pointer;
     /* list-style-type: none; */
 }
 
@@ -43,16 +46,14 @@ body{
     display: none;
 }
 
-/* .PH {
-    font-size: 1rem;
-    width: 13rem;
+.PH{
+    font-size: 0.8rem;
+    width: 10rem;
     float:left;
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    margin-left: 0.1rem;
-    width: 1rem;
-} */
+}
 
 .top-icons {
     float: right;
@@ -102,9 +103,14 @@ p {
     font-size: 1.2rem; 
     font-weight: 200;
 }
-.contact {
-    align-items: center;
-    text-align: center;
+
+#contact {
+    background-color:rgb(226, 193, 236); 
+    padding: 2rem;
+}
+
+.fa.fa-envelope {
+    font-size: 1.6rem;
 }
 
 
@@ -171,7 +177,7 @@ p {
 
     h1 {
         font-size: 2.5rem;
-        font-weight: 400;
+        font-weight: 600;
         line-height:2.3rem;
     }
 
