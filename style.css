@@ -12,27 +12,24 @@ body{
     padding: 0;
     margin: 0;
     color:rgb(108, 79, 108);
+    text-align: center;
 }
 
 .menu-nav {
-    line-height: 80px;
+    line-height: 70px;
     letter-spacing: 1.5px;
-    background-size: cover;
+    justify-content: left;
 }
 
 .menu-nav li {  
-    /* font-size: 1rem; */
     margin-right: 3rem;
-    display: inline-block;
+    display: inline;
     list-style-type: none;
 }
 
-i.fa.fa-bars{
-    display:none;
-}
-/* i.fa.fa-bars::before{
+.fa.fa-bars {
     display: none;
-} */
+}
 
 .PH {
     font-size: 1rem;
@@ -41,6 +38,8 @@ i.fa.fa-bars{
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
+    margin-left: 0.1rem;
+    width: 1rem;
 }
 
 .top-icons {
@@ -65,7 +64,7 @@ a:hover {
 .main {
     display: flex;
     justify-content: space-between;
-    /* justify-items: center; */
+    text-align: left;
     margin: 10rem;
 }
 
@@ -90,7 +89,6 @@ img {
 }
 
 
-
 @media screen and (max-width: 1250px) {
     img {
         width: 20rem;
@@ -102,6 +100,9 @@ img {
         font-size: 0.8rem;
     }
 
+    .iphone {
+        display: inline-block;
+    }
 }
 
 @media screen and (max-width: 960px) {
@@ -110,20 +111,22 @@ img {
         letter-spacing: 1.5px;
         background-size: cover;
     }
+
     .menu-nav li {
         display:none;
         margin: 0;
         padding:0;
     }
 
+    .iphone {
+        display: inline-block;
+
+    }
+
     .PH {
-        display:flex;
-        top: -7rem;
-        width: 1.5rem;
         font-size: 0.5rem;
         text-align: center;
     }
-
 
     h1 {
         font-size: 0.7rem;
@@ -134,25 +137,29 @@ img {
         margin-left: 1rem;
     }
 
+
+
     .intro {
         padding: 0.2rem;
         line-height: 1rem;
         font-size: 0.6rem;
     }
-
-    @media screen and (max-width: 600px) {
-        .main {
-            display:block;
-            text-align: center;
-        }
-
-        img {
-            width: 12rem;
-        }
-
-        i.fa.fa-bars::before{
-            display: flex;
-            margin: 3rem;
-        }
-    } 
 }
+    
+
+@media screen and (max-width: 600px) {
+    .main {
+        display:block;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .intro {
+        line-height: 1rem;
+        font-size: 0.6rem;
+    }
+
+    img {
+        width: 12rem;
+    }
+} 
