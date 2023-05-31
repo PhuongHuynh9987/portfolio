@@ -34,6 +34,7 @@ p {
 a {
     text-decoration: none;
 }
+
 a:visited,
 a:active {
     color:var(--font-color);
@@ -172,12 +173,6 @@ a:hover {
 	text-align: center;
 }
 
-/* .skill {
-    display:flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-} */
-
 .skill i.fab{
     font-size: 3rem;
 }
@@ -250,7 +245,7 @@ img {
         top: -100vh;
         width: 100%;
         height: 100vh;
-        /* z-index: 50; */
+        z-index: 50;
         position: fixed;
     }
 
@@ -261,6 +256,11 @@ img {
         justify-content: center;
     }
 
+    .top-nav li{    
+        font-size: 2rem;
+        margin: 3rem;
+    }
+
     .top-nav.open {
         top: 0;
     }
@@ -268,7 +268,7 @@ img {
     .menu-toggler {
         position: absolute;                 /*Absolute positioning defines the position of a given bounding box from the top and left side margins of the web page. This not only allows objects to be placed in an exact location, it also allows objects to be placed one on top of another.*/
         top: 2.5rem;
-        right: 4.5rem;
+        right: 3rem;
         width: 4rem;
         height: 3rem;
         display: flex;
@@ -290,7 +290,7 @@ img {
         border-radius: 4px;
     }
 
-    h1 {
+    .text-landing h1 {
         font-size: 1.3rem;
     }
 
@@ -321,10 +321,8 @@ img {
     
 
 @media screen and (max-width: 600px) {
-    .main {
-        flex-flow: column;
-        justify-content: left;
-        align-items: center;
+    .menu-toggler {
+        right: 1rem;
     }
 
     .landing-text {
@@ -354,14 +352,15 @@ img {
 
     .about {
         flex-direction: column;
+        padding: 0;
     }
 
     .about-heading h1 {
         font-size: 3rem;
+        font-weight: bolder;
     }
 
     .about-heading h6 {
-
         transform: translate(-30%, 300%);
         font-size: 1.2rem;
     }
