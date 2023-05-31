@@ -99,10 +99,6 @@ img {
         line-height: 1.8rem;
         font-size: 0.8rem;
     }
-
-    .iphone {
-        display: inline-block;
-    }
 }
 
 @media screen and (max-width: 960px) {
@@ -118,13 +114,14 @@ img {
         padding:0;
     }
 
-    .iphone {
-        display: inline-block;
-
+    .fa.fa-bars {
+        display: flex;
+        justify-content:right;
+        margin-right: 5rem;
     }
 
     .PH {
-        font-size: 0.5rem;
+        font-size: 0.7rem;
         text-align: center;
     }
 
