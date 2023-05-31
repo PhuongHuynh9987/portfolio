@@ -177,11 +177,7 @@ p {
 
     h1 {
         font-size: 2.5rem;
-<<<<<<< HEAD
-        font-weight: 600;
-=======
         font-weight: 700;
->>>>>>> 8794102412bb384fc7ff3b50f792db0af3835add
         line-height:2.3rem;
     }
 
@@ -189,12 +185,12 @@ p {
         width: 15rem;
     }
 
-
     .fa.fa-bars {
         display: flex;
         justify-content:right;
-        font-size: 1.7rem;
+        font-size: 3rem;
         padding-bottom: 1rem;
-        margin-right: -2rem;
+        padding: 1rem;
+        margin-right: -4rem;
     }
 } 
