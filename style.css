@@ -31,7 +31,7 @@ body{
     display: none;
 }
 
-.PH {
+/* .PH {
     font-size: 1rem;
     width: 13rem;
     float:left;
@@ -40,7 +40,7 @@ body{
     text-transform: uppercase;
     margin-left: 0.1rem;
     width: 1rem;
-}
+} */
 
 .top-icons {
     float: right;
@@ -120,11 +120,6 @@ img {
         margin-right: 5rem;
     }
 
-    .PH {
-        font-size: 0.7rem;
-        text-align: center;
-    }
-
     h1 {
         font-size: 0.7rem;
     }
@@ -158,5 +153,11 @@ img {
 
     img {
         width: 12rem;
+    }
+
+    .fa.fa-bars {
+        display: flex;
+        justify-content:right;
+        margin-right: 5rem;
     }
 } 
