@@ -16,15 +16,15 @@ body{
 }
 
 .menu-nav {
-    line-height: 70px;
+    line-height: 60px;
     letter-spacing: 1.5px;
-    justify-content: left;
+    text-align: left;
 }
 
 .menu-nav li {  
     margin-right: 3rem;
     display: inline;
-    list-style-type: none;
+    /* list-style-type: none; */
 }
 
 .fa.fa-bars {
