@@ -177,7 +177,11 @@ p {
 
     h1 {
         font-size: 2.5rem;
+<<<<<<< HEAD
         font-weight: 600;
+=======
+        font-weight: 700;
+>>>>>>> 8794102412bb384fc7ff3b50f792db0af3835add
         line-height:2.3rem;
     }
 
