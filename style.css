@@ -195,7 +195,7 @@ a:hover {
 /* About section */
 .about {
     display: flex;
-    margin: 0rem 6rem 10rem 9em;
+    margin: 0rem 6rem 10rem 5em;
     align-items: center;
     justify-content: center;
     text-align: left;
@@ -267,7 +267,7 @@ img {
         justify-content: center;
     }
 
-    .top-nav li{    
+    .top-nav li {    
         font-size: 2rem;
         margin: 2rem;
     }
@@ -318,7 +318,7 @@ img {
     }
 
     img {
-        width: 20rem;
+        width: 17rem;
         margin-left: 1rem;
     }
 
@@ -336,9 +336,6 @@ img {
         font-size: 2rem;
         text-align: right;
     }
-   
-
-
 }
     
 
@@ -382,5 +379,9 @@ img {
     .about-heading h6 {
         transform: translate(-30%, 300%);
         font-size: 1.2rem;
+    }
+
+    a{
+        font-size: 2rem;
     }
 } 
