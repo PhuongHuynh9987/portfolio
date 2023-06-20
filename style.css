@@ -29,10 +29,13 @@ body{
 p {
     font-size: 1.2rem; 
     font-weight: 200;
+    transform: translate(0%, 50%);
 }
 
 a {
     text-decoration: none;
+    color: var(--font-color);
+    cursor: pointer;
 }
 
 a:visited,
@@ -163,7 +166,6 @@ a:hover {
     transform: translate(0%, 600%); /*send the text per6ectly in the middle*/
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-
 }
 
 /* Interest section */
@@ -181,10 +183,19 @@ a:hover {
     color: var(--secondary-color);
 }
 
+/* portfolio section  */
+.portfolio img {
+    width: 20%;
+}
+.portfolio p {
+    margin: 0rem 3rem 0rem 3rem;
+}
+
+
 /* About section */
 .about {
     display: flex;
-    margin: 0rem 7rem 10rem 9em;
+    margin: 0rem 6rem 10rem 9em;
     align-items: center;
     justify-content: center;
     text-align: left;
@@ -258,7 +269,7 @@ img {
 
     .top-nav li{    
         font-size: 2rem;
-        margin: 3rem;
+        margin: 2rem;
     }
 
     .top-nav.open {
@@ -266,7 +277,10 @@ img {
     }
 
     .menu-toggler {
-        position: absolute;                 /*Absolute positioning defines the position of a given bounding box from the top and left side margins of the web page. This not only allows objects to be placed in an exact location, it also allows objects to be placed one on top of another.*/
+        position: absolute;                
+         /*Absolute positioning defines the position of a given bounding box from the top and left side margins of the web page.
+         This not only allows objects to be placed in an exact location,
+          it also allows objects to be placed one on top of another.*/
         top: 2.5rem;
         right: 3rem;
         width: 4rem;
@@ -294,8 +308,17 @@ img {
         font-size: 1.3rem;
     }
 
+    .my-skills {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .skill {
+        margin-bottom: 5rem;
+    }
+
     img {
-        width: 17rem;
+        width: 20rem;
         margin-left: 1rem;
     }
 
@@ -313,15 +336,16 @@ img {
         font-size: 2rem;
         text-align: right;
     }
-    .my-skills {
-        display:flex;
-        flex-direction: column;
-    }
+   
+
+
 }
     
 
 @media screen and (max-width: 600px) {
     .menu-toggler {
+        width: 2.5rem;
+        height: 2rem;
         right: 1rem;
     }
 
@@ -343,11 +367,6 @@ img {
 
     img {
         width: 15rem;
-    }
-
-    .menu-toggler {
-        width: 2.5rem;
-        height: 2rem;
     }
 
     .about {

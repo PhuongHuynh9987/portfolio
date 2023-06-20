@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter:wght@100&family=Montserrat:wght@100;200&family=Nunito:wght@200&family=Pangolin&family=Playfair:ital,wght@0,300;1,300&family=Roboto+Slab&display=swap');
+
+/* Global */
+:root {
+    --primary-color: rgb(250, 234, 247);
+    --secondary-color: rgba(185, 138, 198, 0.7);
+    --font-color: rgb(108, 79, 108);
+    --border-radius: 5px;
+}
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+	padding: 0;
+    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+body{
+    width: 100%;
+	height: 100%;
+    min-height: 100vh; 
+    /* font-family: 'Inter', sans-serif; */
+    /* text-align: center; */
+    /* letter-spacing: 1.5px; */
+}
+section {
+	padding: 10rem 2rem;
+}
+
+h1 {
+
+}
+
+.landing-text {
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%); /*send the text perfectly in the middle*/
+	width: 95%;
+    height:60%;
+    background-image: url('/wine.jpg');
+    background-size: cover;
+    opacity: 0.7;
+    text-align:left;
+    justify-content: center;
+    font-weight:bolder;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.landing-text h1, 
+.landing-text h4 {
+    transform: translate(0%, 600%); /*send the text per6ectly in the middle*/
+    /* font-family: 'Montserrat', sans-serif; */
+    text-transform: uppercase;
+    margin: 0 5rem;
+}
+
+/* .main p {
+   position: relative;
+   font-size: large;
+} */
+
+.main {
+    margin: 20px;
+    padding: 10px;
+    width: 90rem;
+    box-shadow: 2rem 1.2rem 3rem rgba(10, 10, 11, 0.7);
+    background-color:  rgba(250, 234, 247,0.5);
+    text-align: left;
+}
+
+
+@media screen and (max-width: 1550px) {
+    .main{
+        width: 80rem;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .main{
+        width: 60rem;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .main{
+        width: 40rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .main{
+        width: 20rem;
+    }
+}
