@@ -360,7 +360,8 @@ img {
     }
 
     .landing-text {
-        height: 15rem;
+        top: 30%;
+        height: 30%;
     }
 
     .landing-text h1,
@@ -369,9 +370,8 @@ img {
         font-size: 1.2rem;
     }
 
-    h1 {
-        font-size: 2.5rem;
-        font-weight: 700;
+    h1 a {
+        font-size:  1.1rem;
         line-height:2.3rem;
     }
 
