@@ -57,7 +57,7 @@ section {
 }
 
 .section-heading h1 {
-	font-size: 2.4rem;
+	font-size: 2rem;
 	color: var(--font-color);
 	text-transform: uppercase;
 	position: relative;
@@ -88,7 +88,7 @@ section {
 }
 
 .section-heading h6 {
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	font-weight: 300;
 }
 
@@ -149,11 +149,11 @@ a:hover {
 
 .landing-text {
 	position: absolute;
-	top: 55%;
+	top: 45%;
 	left: 50%;
 	transform: translate(-50%, -50%); /*send the text perfectly in the middle*/
 	width: 80%;
-    height:70%;
+    height:60%;
     background-image: url('bg.jpg');
     background-size: cover;
     opacity: 0.9;
@@ -166,6 +166,7 @@ a:hover {
     transform: translate(0%, 600%); /*send the text per6ectly in the middle*/
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
+    /* font-size: 1.2rem; */
 }
 
 /* Interest section */
@@ -175,8 +176,8 @@ a:hover {
 	text-align: center;
 }
 
-.skill i.fab{
-    font-size: 3rem;
+.skill i.fab { 
+    font-size: 2.6rem;
 }
 
 .icon-container:hover {
@@ -244,6 +245,16 @@ img {
         width: 20rem;
     }
 
+    .landing-text {
+        top: 30%;
+        height: 30%;
+    }
+
+    .landing-text h1,
+    .landing-text h2{
+        /* transform: translate(0%,100%); */
+        font-size: 0.9rem;
+    }
     .about {
         padding-left: 0.2rem;
         line-height: 1.8rem;
@@ -304,8 +315,10 @@ img {
         border-radius: 4px;
     }
 
-    .text-landing h1 {
-        font-size: 1.3rem;
+    .landing-text h1,
+    .landing-text h2{
+        /* transform: translate(0%,100%); */
+        font-size: 0.8rem;
     }
 
     .my-skills {
@@ -352,7 +365,7 @@ img {
 
     .landing-text h1,
     .landing-text h2{
-        transform: translate(0%,100%);
+        /* transform: translate(0%,100%); */
         font-size: 1.2rem;
     }
 
