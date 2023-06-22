@@ -223,10 +223,11 @@ a:hover {
 .about-heading p {
 	text-align: left;
     margin-left: 2rem;
+    margin-bottom: 40%;
 }
 
 img {
-    width: 30rem;
+    width: 25rem;
 }
 
 /* Contact section */
