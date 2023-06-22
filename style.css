@@ -245,10 +245,10 @@ img {
         width: 20rem;
     }
 
-    .landing-text {
+    /* .landing-text {
         top: 30%;
         height: 30%;
-    }
+    } */
 
     .landing-text h1,
     .landing-text h2{
@@ -315,8 +315,12 @@ img {
         border-radius: 4px;
     }
 
+    .landing-text{
+        height: 30%;
+        top: 30%;
+    }
     .landing-text h1,
-    .landing-text h2{
+    .landing-text h2 {
         /* transform: translate(0%,100%); */
         font-size: 0.8rem;
     }
@@ -336,17 +340,17 @@ img {
     }
 
     .about {
-        padding: 0;
+        padding: 0rem;
         line-height: 1.6rem;
     }
     
     .about-heading h1 {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .about-heading h6 {
-        transform: translate(0%, 430%);
-        font-size: 2rem;
+        transform: translate(-10%, 400%);
+        font-size: 1.5rem;
         text-align: right;
     }
 }
@@ -376,7 +380,7 @@ img {
     }
 
     img {
-        width: 15rem;
+        width: 20rem;
     }
 
     .about {
