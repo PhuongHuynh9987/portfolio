@@ -61,7 +61,7 @@ section {
 	color: var(--font-color);
 	text-transform: uppercase;
 	position: relative;
-	margin-bottom: 2rem;
+	/* margin-bottom: 5rem; */
 }
 
 .section-heading h1:before, 
@@ -359,7 +359,7 @@ img {
 
     h1 a {
         font-size:  1.1rem;
-        line-height:2.3rem;
+        line-height: 2.3rem;
     }
 
     .icon-container img {
