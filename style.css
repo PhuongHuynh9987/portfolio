@@ -140,5 +140,9 @@ section {
     .my_photo img {
         width: 16rem;
     }
+
+    .portfolio {
+        overflow-y:unset;
+    }
 }
 
