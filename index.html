@@ -4,164 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="icon" type="image/png" href="/images/icon.png">
     <link rel = 'stylesheet' href = 'style.css'>
     <link rel ='icon' href="">  
     <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script> -->
+    <!-- <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet"> -->
+    <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">     -->
+
+    <!-- <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>   <!-- link to fontawesome for icons-->
     <link rel="preconnect" href="https://fonts.googleapis.com">  <!-- link font from google font-->
     <title>Phuong Huynh</title>
 </head>
 
 <body>
-
-    <!-- Header Section -->
-    <header>
-        <div class ='menu-toggler'>
-            <div class="bar half start"></div>
-            <div class="bar"></div>
-            <div class="bar half end"></div>
-            <!-- <i class="fa fa-bars"></i>   hamburger icon -->
-        </div>
-        <nav class="top-nav">
-            <ul>
-                <!-- <li class ='PH'><a href = 'https://phuonghuynh9987.github.io/portfolio'>Phuong Huynh</a></li> -->
-                <li><a href = '#portfolio'>Projects</a></li>
-                <li><a href = '#about'>About Me</a></li>
-                <li><a href = '#contact'>Contact</a></li>
-                <li class = 'top-icons'>
-                    <a href = 'https://github.com/PhuongHuynh9987' target="_blank" alt='github'> <i class="fab fa-github"></i></a>
-                    <a href = 'https://www.linkedin.com/in/phuong-huynh-3299531b4/'  target="_blank" alt = 'linkedIn'><i class="fab fa-linkedin"></i></a>
-                    <a href = 'https://www.kaggle.com/phuongphuong9987/code' alt ='kaggle' target="_blank"><i class="fab fa-kaggle"></i></a>
-                    <a target="_blank" href="Resume.pdf">Resume</a>
-                </li>
-            </ul>
-        </nav>
-
-        <div class="landing-text">
-            <h2>Hello, my name is</h2>
-            <h1>Phuong Huynh</h1>
-        </div>
-    </header>
-
-    <!-- Interest Section-->
-    <section class="interest" id="interest">
-        <div class="section-heading">
-            <h1>Areas of Interest</h1>
-            <h6>Skills that I am looking to work on</h6>
-        </div>
-
-        <div class="my-skills">
-            <div class="skill">
-                <div class="icon-container">
-                    <i class="fab fas fa-comment"></i>
-                    <h3>NLP</h3>
+    <div class="body">
+        <!-- About me section -->
+        <section class="about_me" id="portfolio">
+            <div class = "my_photo">
+                <h1 class="my_name">Phuong Huynh</h1>
+                <img src="images/my-photo.jpg" alt="">
+                <div>
+                    <a href="Phuong Ohashi resume.pdf" target="_blank"> Resume </a> | <a href="https://www.linkedin.com/in/phuonghuynh9987/" target="_blank"> LinkedIn </a> | <a href="https://github.com/PhuongHuynh9987" target="_blank"> GitHub </a>
                 </div>
-                <p>Natural Language Processor</p>
-            </div>
-
-             <div class="skill">
-                <div class="icon-container">
-                    <i class="fa fab fa-database"></i>
-                    <h3>SQL</h3>
-                </div>
-                <p>Database Management with SQL and mySQL</p>
-            </div>
-            <div class="skill">
-                <div class="icon-container">
-                    <i class="fas fab fa-solid fa-laptop-code"></i>
-                    <h3>Data Visualization</h3>
-                </div>
+                <p>Student pursuing a Bachelor's Degree in Applied Mathematics - 
+                    Statistics Concentration at San Jose State University</p>
                 
-                <p>Data Visualization and Data Analysis</p>
             </div>
-        </div>
-    </section>
- 
-    <!-- Portfolio Section -->
-    <section class="portfolio" id="portfolio">
-        <div class="section-heading">
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio" id="portfolio">
             <h1>Projects</h1>
-            <h6>My latest works</h6>
-        </div>
+            <div class="project">
+                <hr>
+                <h4>Which factors affect K-12 performance?</h4>
+                <h3>Tools: R programming</h3>
+                <p>In our Regression Theory course project, we delved into the examination of influences on K-12 students' academic performance in 
+                    CAASPP tests using Regression Analysis. We employed data aggregation techniques to enhance our analysis. Furthermore, we meticulously validated regression model assumptions and identified multicollinearity issues.
 
-        <div class="my-skills">
-            <div class="skill">
-                <div class="icon-container">
-                    <!-- <i class="fa fa-desktop"></i> -->
-                    <i class="fa fa-code"></i>
-                    <!-- <img src='wine.jpg' alt=""> -->
-
-                </div>
-                <h1><a href = 'https://github.com/PhuongHuynh9987/wine-quality-analysis/blob/main/Wine%20Analysis.ipynb' target="_blank">Wine Quality Classification</a></h1>
-                <p>In this project, I used the dataset from UCI machine learning about different components in red wine 
-                    to predict the quality of the wine using the components as predictors. </p>
-            </div>
-
-            <div class="skill">
-                <div class="icon-container">
-                    <i class="fa fa-code"></i>
-                </div>
-                <h1 ><a href="https://github.com/PhuongHuynh9987/Simulation-project/blob/main/Simulation-Github.ipynb">Probability Simulation</a></h1>
-                <p>The project contains the simulation code to generate approximate probabilities of events in probability theory
-                    such as drawing balls, dices, tossing a coin, or dealing cards.  
                 </p>
-            </div>
-
-            <div class="skill">
-                <div class="icon-container">
-                    <i class="fa fa-code"></i>
+ 
+                <div class="link">
+                    <a href=""> <i class="fab fa-github"></i> </a>
+                    <h2><a href="/Project_Report.pdf" target="_blank">Report</a></h2>
                 </div>
-                <h1><a href="https://github.com/PhuongHuynh9987/NLP_Taylor_Swift/blob/main/taylorSwift.ipynb">Taylor Swift lyrics Analysis </a></h1>
-                <p>In this project, I used NLP machine learning method to analyze how often the words that Taylor Swift used for the lyrics of each album.
-                    Then they will be decided which kind of emotion that the lyrics represent. 
-                   </p>
-            </div>
-<!--
-            <div class="skill">
-                <div class="icon-container">
-                    <i class="fa fa-chart-bar"></i>
+                <hr>
+
+                <h4>CAMCOS project</h4>
+                <p>A real-life project sponsored by the Ethereum blockchain, with a specific emphasis on achieving censorship resistance. </p>
+                    <!-- <a href="">
+                        <button>
+                            <i class="fab fa-github"></i> GitHub 
+                        </button>
+                    </a> -->
+                <hr>
+
+                <h4>Simulation - Probability Theory</h4>
+                <h3>Tools: Python, Matplotlib, NumPy</h3>
+                <p>This simple project involves a fundamental simulation that integrates principles from a Probability Theory course</p>
+                <a href="https://github.com/PhuongHuynh9987/Simulation-project" target="_blank">
+                    <!-- <button> -->
+                    <i class="fab fa-github"></i>  
+                    <!-- </button> -->
+                </a>
+                <div>
+                    <img src="images/simulation-2.png" alt="">
+                    <img src="images/simulation-1.png" alt="">
                 </div>
-                <h1>Product Strategy</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </div>-->
-        </div> 
-    </section>
 
-    <!-- About Me Section -->
-    <section class="about" id="about">
-        <div class="photo" >
-            <img src = 'my-photo.jpg'>
-        </div>
+                <hr>
+                <h4>E-commerce Shopaholic</h4>
+                <p>In this introductory Database Management class project, 
+                    we focused on the design of relational tables, utilized Java for web programming, and employed queries to implement a webpage.
+                </p>
+                <a href="https://github.com/PhuongHuynh9987">
+                    <!-- <button> -->
+                        <i class="fab fa-github"></i>  
+                    <!-- </button> -->
+                </a>
+                <hr>
+            </div>
+            
 
-        <div class="about-heading">
-            <h6>Myself</h6>
-            <h1>About</h1>
-
-            <p>I am currently an undergraduate student pursing a Bachelor's Degree in Mathematics 
-                with a concentration in Statistics at San Jose State University.</p>
-            <!-- <div class="social-media">
-                <ul class="nav-list">
-                    <li>
-                        <a href="#" class="icon-link"><i class="fa fa-facebook-square"></i></a>
-                    </li>
-                    <li>
-                        <a href="#" class="icon-link"><i class="fa fa-twitter-square"></i></a>
-                    </li>
-                    <li>
-                        <a href="#" class="icon-link"><i class="fa fa-instagram"></i></a>   
-                    </li>
-                </ul>
-            </div> -->
-        </div>
-    </section>
-
-    <section class = 'contact' id="contact">
-        <h2>Contact</h2>
-        <a href = 'mailto:huynhphuong9987@gmail.com'><i class="fa fa-envelope"></i></a>
-    </section>
-
+        </section>
+    </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

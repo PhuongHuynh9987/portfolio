@@ -2,9 +2,9 @@
 
 /* Global */
 :root {
-    --primary-color: rgb(250, 234, 247);
-    --secondary-color: rgba(185, 138, 198, 0.7);
-    --font-color: rgb(108, 79, 108);
+    --primary-color: rgb(40, 102, 156);
+    --secondary-color: rgba(130, 177, 235, 0.7);
+    --font-color: rgb(103, 101, 103);
     --border-radius: 5px;
 }
 
@@ -20,368 +20,125 @@ body{
 	height: 100%;
     background-color: #fff;
     min-height: 100vh; 
-    font-family: 'Inter', sans-serif;
-    color: var(--font-color);
+    /* font-family: 'Inter', sans-serif; */
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-    letter-spacing: 1.5px;
+    /* letter-spacing: 4px; */
+}
+
+.my_name {
+    color: var(--primary-color);
+    font-size: 3.1rem;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 2.6rem;
+}
+
+h4 {
+    font-size: 1.8rem;
 }
 
 p {
-    font-size: 1.2rem; 
-    font-weight: 200;
-    transform: translate(0%, 50%);
+    font-weight: 100;
+    text-align:justify;
+    font-size: 1.55rem;
+    color: var(--font-color);
+    /* transform: translate(0%, 50%); */
 }
 
 a {
     text-decoration: none;
-    color: var(--font-color);
+    color: var(--primary-color);
     cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
-a:visited,
-a:active {
-    color:var(--font-color);
+.link {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
 }
 
-li {
-    list-style: none;
-}
-
-section {
-	padding: 6rem 0;
-}
-
-.section-heading {
-	text-align: center;
-	margin-bottom: 4rem;
-}
-
-.section-heading h1 {
-	font-size: 2rem;
-	color: var(--font-color);
-	text-transform: uppercase;
-	position: relative;
-	/* margin-bottom: 5rem; */
-}
-
-.section-heading h1:before, 
-.section-heading h1:after {
-	content: '';
-	position: absolute;
-	bottom: -.5rem;
-	left: 50%;
-	transform: translateX(-50%);
-	background-color: var(--secondary-color);
-}
-
-.section-heading h1:before {
-	width: 12rem;
-	height: 3px;
-	border-radius: .8rem;
-}
-
-.section-heading h1:after {
-	width: 1rem;
-	height: 1rem;
-	border-radius: 100%;
-	bottom: -.95rem;
-}
-
-.section-heading h6 {
-	font-size: 1.2rem;
-	font-weight: 300;
-}
-
-/* Start header */
-header {
-	width: 100%;
-	height: 100vh;
-}
-
-.top-nav {
-    background-color: var(--primary-color); 
-    position: fixed;                    /*so the top bar will  not move as we scroll*/
-    top: 0;
-    right: 0;
-    left:0;
-    opacity: 1;
-    box-shadow: 0 10px 50px rgba(93, 78, 92, 0.3);
-    text-align: right;
-    line-height: 50px;
-    transition: all 650ms cubic-bezier(1,0,0,1);
-    z-index: 40;
-} 
-
-.top-nav li {  
-    margin-right: 1rem;
-    display: inline;
+i {
+    font-size: 2.4rem;
+    align-items: center;
+    margin: 1.2rem 0;
     cursor: pointer;
-}
-
-.menu-toggler {
-    display: none;
-}
-
-/* .PH {
-    font-size: 0.9rem;
-    width: 10rem;
-    font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-} */
-
-.top-icons {
-    float: right;
-    font-size: 1.1rem;
-}
-
-a {
-    padding: 0.4rem 0.8rem 0.4rem 0.8rem;
-    border-radius: 12px;
 }
 
 a:hover {
-    transition: all 0.2s ease-in;
-    background-color: var(--secondary-color); 
-    border-radius: 12px;
-    color: white;
+    text-decoration: underline;
 }
 
-.landing-text {
-	position: absolute;
-	top: 45%;
-	left: 50%;
-	transform: translate(-50%, -50%); /*send the text perfectly in the middle*/
-	width: 80%;
-    height:60%;
-    background-image: url('bg.jpg');
-    background-size: cover;
-    opacity: 0.9;
-    text-align:center;
-    justify-content: center;
-    font-size: 0.8rem;
-}
-
-.landing-text h1,
-.landing-text h2 {
-    transform: translate(0%, 600%); /*send the text per6ectly in the middle*/
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-   
-}
-
-/* Interest section */
-.my-skills {
-	display: grid; 
-	grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));              /*to center everything*/
-	text-align: center;
-}
-
-.skill i.fab { 
-    font-size: 2.6rem;
-}
-
-.icon-container:hover {
+i:hover {
     color: var(--secondary-color);
+    text-decoration: none;
 }
 
-/* portfolio section  */
-.portfolio img {
-    width: 20%;
+section {
+    padding: 3rem 2rem;
 }
-.portfolio p {
-    margin: 0rem 3rem 0rem 3rem;
-}
+/* end global */
 
-
-/* About section */
-.about {
-    display: flex;
-    margin: 0rem 6rem 10rem 5em;
-    align-items: center;
+/* body */
+.body {
+    display: grid;
+    grid-template-columns: 38rem 56rem;
+    height: 100vh;
     justify-content: center;
+    /* grid-auto-flow: column; */
+}
+
+/* End body */
+
+/* About me section */
+.about_me {
+    position: sticky;
+    /* top: 0; */
+    margin-right: 6rem;
+}
+
+.my_photo img {
+    width: 350px;
+    border-radius: 50%;
+}
+
+.my_photo div {
+    margin: 2rem;
+}
+
+/* Portfolio section */
+.portfolio {
     text-align: left;
+    /* grid-auto-flow: column; */
+    /* grid-auto-columns: 35%; */
+    /* grid-template-rows: unset; */
+    /* grid-template-columns: unset; */
+    overflow-y: auto;
 }
 
-.about-heading {
-	text-align: center;
-	/* text-transform: uppercase; */
-}
-
-.about-heading h1 {
-    font-size: 3.4rem;
-	opacity: .3;
-}
-
-.about-heading h6 {
-    font-size: 1.5rem;
-    transform: translate(5%, 380%);
-    /* text-align: right; */
-    font-weight: 300;
-}
-
-.about-heading p {
-	text-align: left;
-    margin-left: 2rem;
-    margin-bottom: 40%;
-}
-
-img {
-    width: 25rem;
-}
-
-/* Contact section */
-
-#contact {
-    background-color:var(--secondary-color); 
-    padding: 2rem;
-}
-
-.fa.fa-envelope {
-    font-size: 1.6rem;
+.portfolio div img {
+    width: 44rem;
 }
 
 
-@media screen and (max-width: 1250px) {
-    img {
-        width: 20rem;
-    }
-
-    .about {
-        padding-left: 0.2rem;
-        line-height: 1.8rem;
-        font-size: 0.8rem;
-    }
-}
-
-@media screen and (max-width: 960px) {
-    .top-nav {
-        top: -100vh;
-        width: 100%;
-        height: 100vh;
-        z-index: 50;
-        position: fixed;
-    }
-
-    .top-nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+@media only screen and (max-width: 1200px) {
+    .body{
+        grid-template-columns: auto;
         justify-content: center;
     }
 
-    .top-nav li {    
-        font-size: 2rem;
-        margin: 2rem;
+    .about_me {
+
+        width: 70%;
     }
 
-    .top-nav.open {
-        top: 0;
-    }
-
-    .menu-toggler {
-        position: absolute;                
-         /*Absolute positioning defines the position of a given bounding box from the top and left side margins of the web page.
-         This not only allows objects to be placed in an exact location,
-          it also allows objects to be placed one on top of another.*/
-        top: 2.5rem;
-        right: 3rem;
-        width: 4rem;
-        height: 3rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        cursor: pointer;
-        z-index: 200;
-        transition: transform 650ms ease-out;
-    }
-
-    .menu-toggler:hover{
-        transform: scale(1.2);
-    }
-
-    .bar {
-        width: 100%;
-        height: 4px;
-        background: linear-gradient(to right, rgb(226, 193, 236), rgba(163, 114, 177, 0.9));
-        border-radius: 4px;
-    }
-
-    .landing-text{
-        /* height: 30%;
-        top: 30%; */
-        font-size: 0.7rem;
-    }
-
-    .my-skills {
-        display:flex;
-        flex-direction: column;
-    }
-
-    .skill {
-        margin-bottom: 5rem;
-    }
-
-    img {
-        width: 17rem;
-        margin-left: 1rem;
-    }
-
-    .about {
-        padding: 0rem;
-        line-height: 1.6rem;
-    }
-    
-    .about-heading h1 {
-        font-size: 3.5rem;
-    }
-
-    .about-heading h6 {
-        transform: translate(-10%, 400%);
-        font-size: 1.5rem;
-        text-align: right;
+    .my_photo img {
+        width: 16rem;
     }
 }
-    
 
-@media screen and (max-width: 600px) {
-    .menu-toggler {
-        width: 2.5rem;
-        height: 2rem;
-        right: 1rem;
-    }
-
-    .landing-text {
-        top: 30%;
-        height: 30%;
-        font-size: 0.5rem;
-    }
-
-    h1 a {
-        font-size:  1.1rem;
-        line-height: 2.3rem;
-    }
-
-    .icon-container img {
-        width: 60%;
-    }
-
-    .about {
-        flex-direction: column;
-        padding: 0;
-    }
-
-    .about-heading h1 {
-        font-size: 3rem;
-        font-weight: bolder;
-    }
-
-    .about-heading h6 {
-        transform: translate(-30%, 300%);
-        font-size: 1.2rem;
-    }
-
-    a{
-        font-size: 2rem;
-    }
-} 
