@@ -132,6 +132,19 @@ section {
         justify-content: center;
     }
 
+    h1 {
+        /* font-weight: 400; */
+        font-size: 1.7rem;
+    }
+    
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
     .about_me {
 
         width: 70%;
