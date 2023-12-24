@@ -128,8 +128,11 @@ section {
 
 @media only screen and (max-width: 1200px) {
     .body{
-        grid-template-columns: auto;
+        grid-template-columns:auto;
         justify-content: center;
+        align-items: center;
+        width: fit-content;
+        height:fit-content;
     }
 
     h1 {
