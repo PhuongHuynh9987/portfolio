@@ -267,7 +267,6 @@ h4 {
     }
 }
 
-/* for phone */
 @media only screen and (max-width: 1000px) {
     .project {
         grid-template-columns: 20rem 30rem;
@@ -275,14 +274,12 @@ h4 {
 }
 
 
-/* for phone */
 @media only screen and (max-width: 900px) {
     .project {
         grid-template-columns: 20rem 26rem;
     }
 }
 
-/* for phone */
 @media only screen and (max-width: 800px) {
     .project {
         grid-template-columns: 15rem 24rem;
@@ -313,16 +310,25 @@ h4 {
     
     /* projects */
     .project {
-        grid-template-columns: 10rem 16rem;
+        grid-template-columns: 26rem;
+        justify-content: center;
+        align-items: center;
+        /* width: fit-content;  */
+        /* height: fit-content;*/
     }
 
-    .portfolio .project .image{
-        /* height: 100px; */
+
+    /* .portfolio .project .image{
         margin-right: 2rem;
+    } */
+
+    .portfolio .project .image {
+        width: 20rem;
+
     }
+
     .portfolio .project .image img {
-        width: 9rem;
-        height: 8rem;
+        width: 20rem;
         margin: 0;
     }
 
@@ -332,7 +338,7 @@ h4 {
 
     p {
         font-size: 1.2rem;
+        height: 10rem;
     } 
-
 
 }
