@@ -268,12 +268,17 @@ h4 {
     
     /* projects */
     .project {
-        grid-template-columns: 14rem 15.7rem;
+        grid-template-columns: 10rem 17rem;
     }
 
+    .portfolio .project .image{
+        /* height: 100px; */
+        margin-right: 2rem;
+    }
     .portfolio .project .image img {
-        width: 12rem;
-        height: 10rem;
+        width: 9rem;
+        height: 8rem;
+        margin: 0;
     }
 
     a {
