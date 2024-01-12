@@ -1,30 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter:wght@100&family=Montserrat:wght@100;200&family=Nunito:wght@200&family=Pangolin&family=Playfair:ital,wght@0,300;1,300&family=Roboto+Slab&display=swap');
 
 /* Global */
-:root {
-    --primary-color: rgb(40, 102, 156);
-    --secondary-color: rgba(130, 177, 235, 0.7);
-    --font-color: rgb(103, 101, 103);
-    --border-radius: 5px;
-}
+    :root {
+        --primary-color: rgb(40, 102, 156);
+        --secondary-color: rgba(130, 177, 235, 0.7);
+        --font-color: rgb(103, 101, 103);
+        --border-radius: 5px;
+    }
 
-html {
-    box-sizing: border-box;
-    margin: 0;
-	padding: 0;
-    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-}
+    html {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    }
 
-body{
-    width: 100%;
-	height: 100%;
-    background-color: #fff;
-    min-height: 100vh; 
-    /* font-family: 'Inter', sans-serif; */
-    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-    /* letter-spacing: 4px; */
+    body{
+        width: 100%;
+        height: 100%;
+        /* background-color: aliceblue; */
+        min-height: 100vh; 
+        /* font-family: 'Inter', sans-serif; */
+        /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+        /* letter-spacing: 4px; */
+    }
+
+    p {
+        height: 3rem;
+        font-weight: 100;
+        text-align:justify;
+        font-size: 1.55rem;
+        color: var(--font-color);
+        margin: 0; 
+        overflow: scroll;
+        height: 8.4rem;
+
+        /* text-overflow: scroll; */
+        /* Required for text-overflow to do anything */
+        /* white-space: nowrap; */
+       /* resize: horizonvetal; */
+       
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--primary-color);
+        cursor: pointer;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+    .link {
+        display: flex;
+        align-items: center;
+        gap: 0.9rem;
+    }
+
+    i {
+        font-size: 2.4rem;
+        align-items: center;
+        margin: 1.2rem 0;
+        cursor: pointer;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    i:hover {
+        color: var(--secondary-color);
+        text-decoration: none;
+    }
+
+    section {
+        padding: 3rem 2rem;
+    }
+
+    hr { 
+        margin: 2rem 0;
+        border-top: 3px solid #abc5dd;
+    }
+
+
+/* End global */
+
+
+
+
+/* body */
+.body {
+    display: grid;
+    grid-template-columns: 38rem 82rem;
+    height: 100vh;
+    justify-content: center;
+    /* grid-auto-flow: column; */
+}
+/* End body */
+
+
+
+
+/* ABOUT ME section */
+.about_me {
+    position: sticky;
+    /* top: 0; */
+    margin-right: 6rem;
 }
 
 .my_name {
@@ -34,72 +116,12 @@ body{
 
 h1 {
     font-weight: 600;
-    font-size: 2.6rem;
+    font-size:40px;
+    text-align: center;
 }
 
 h4 {
     font-size: 1.8rem;
-}
-
-p {
-    font-weight: 100;
-    text-align:justify;
-    font-size: 1.55rem;
-    color: var(--font-color);
-    /* transform: translate(0%, 50%); */
-}
-
-a {
-    text-decoration: none;
-    color: var(--primary-color);
-    cursor: pointer;
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-
-.link {
-    display: flex;
-    align-items: center;
-    gap: 0.9rem;
-}
-
-i {
-    font-size: 2.4rem;
-    align-items: center;
-    margin: 1.2rem 0;
-    cursor: pointer;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-i:hover {
-    color: var(--secondary-color);
-    text-decoration: none;
-}
-
-section {
-    padding: 3rem 2rem;
-}
-/* end global */
-
-/* body */
-.body {
-    display: grid;
-    grid-template-columns: 38rem 56rem;
-    height: 100vh;
-    justify-content: center;
-    /* grid-auto-flow: column; */
-}
-
-/* End body */
-
-/* About me section */
-.about_me {
-    position: sticky;
-    /* top: 0; */
-    margin-right: 6rem;
 }
 
 .my_photo img {
@@ -109,9 +131,12 @@ section {
 
 .my_photo div {
     margin: 2rem;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Portfolio section */
+
+/* PORTFOLIO section */
 .portfolio {
     text-align: left;
     /* grid-auto-flow: column; */
@@ -121,40 +146,116 @@ section {
     overflow-y: auto;
 }
 
-.portfolio div img {
-    width: 44rem;
+.project {
+    /* background-color: #fff; */
+    border: 5px solid #abc5dd;
+    display: grid;
+    grid-template-columns: 26em 48rem;
+    /* padding: 0.2rem ; */
+    margin: 2rem 0;
+    border-radius: 14px;
+    /* height: 22rem; */
+}
+
+.portfolio .project .image {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin: 2rem;
+
+}
+
+.portfolio .project .image img {
+    width: 23rem;
+    /* margin: 0rem; */
+    height: 19rem;
+    border-radius: 2rem;
 }
 
 
+/* for smaller laptop screen */
+@media only screen and (max-width: 1900px) {
+    .body {
+        grid-template-columns: 26rem 70rem;
+    }
+
+    /* About Me */
+    .about_me {
+        margin: 0;
+    }
+
+    /* projects */
+    .project {
+        grid-template-columns: 25rem 37rem;
+    }
+
+    .portfolio .project .image{
+        /* height: 100px; */
+        margin-right: 3rem;
+    }
+    .portfolio .project .image img {
+        width: 22rem;
+    }
+}
+
+
+/* for ipad */
+@media only screen and (max-width: 1500px) {
+    .body {
+        grid-template-columns: 24rem 55rem;
+    }
+
+    /* About Me */
+    .about_me {
+        margin: 0;
+    }
+
+    /* projects */
+    .project {
+        grid-template-columns: 20rem 28rem;
+    }
+
+    .portfolio .project .image{
+        /* height: 100px; */
+        /* margin-right: 3rem; */
+    }
+
+    .portfolio .project .image img {
+        width: 18rem;
+        height: 15rem;
+    }
+}
+
+
+/* smaller laptop screen */
 @media only screen and (max-width: 1200px) {
-    .body{
+    .body {
         grid-template-columns:auto;
         justify-content: center;
         align-items: center;
         width: fit-content;
-        height:fit-content;
+        height: fit-content;
     }
 
-    h1 {
-        /* font-weight: 400; */
-        font-size: 1.7rem;
-    }
-    
     h4 {
         font-size: 1.2rem;
     }
 
     p {
-        font-size: 1.1rem;
+        margin: 0 10rem;
+    } 
+
+     /* projects */
+     .project {
+        grid-template-columns: 20rem 35rem;
     }
 
-    .about_me {
-
-        width: 70%;
+    .project .intro {
+        margin: 0;
     }
 
     .my_photo img {
-        width: 16rem;
+        width: 17rem;
     }
 
     .portfolio {
@@ -162,3 +263,23 @@ section {
     }
 }
 
+
+/* for phone */
+@media only screen and (max-width: 700px) {
+    
+    /* projects */
+    .project {
+        grid-template-columns: 15rem 22rem;
+    }
+
+    .portfolio .project .image img {
+        width: 14rem;
+        height: 12rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    } 
+
+
+}
