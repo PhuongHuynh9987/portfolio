@@ -210,6 +210,18 @@ h4 {
         margin: 0;
     }
 
+    .my_photo img {
+        width: 16.6rem;
+    }
+
+    .my_photo img {
+        width: 17rem;
+    }
+
+    .about_me h1 {
+        font-size: 2.4rem;
+    }
+
     /* projects */
     .project {
         grid-template-columns: 20rem 28rem;
@@ -256,7 +268,7 @@ h4 {
 }
 
 /* for phone */
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 1000px) {
     .project {
         grid-template-columns: 20rem 30rem;
     }
@@ -264,7 +276,40 @@ h4 {
 
 
 /* for phone */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
+    .project {
+        grid-template-columns: 20rem 26rem;
+    }
+}
+
+/* for phone */
+@media only screen and (max-width: 800px) {
+    .project {
+        grid-template-columns: 15rem 24rem;
+    }
+    .portfolio .project .image img {
+        width: 12rem;
+        height: 10rem;
+        margin: 0;
+    }
+}
+
+
+/* for phone */
+@media only screen and (max-width: 650px) {
+    .project {
+        grid-template-columns: 13rem 20rem;
+    }
+    .portfolio .project .image img {
+        width: 12rem;
+        height: 10rem;
+        margin: 0;
+    }
+}
+
+
+/* for phone */
+@media only screen and (max-width: 550px) {
     
     /* projects */
     .project {
