@@ -241,17 +241,9 @@ h4 {
         font-size: 1.2rem;
     }
 
-    p {
-        margin: 0 10rem;
-    } 
-
      /* projects */
-     .project {
-        grid-template-columns: 20rem 35rem;
-    }
-
-    .project .intro {
-        margin: 0;
+    .project {
+        grid-template-columns: 20rem 37rem;
     }
 
     .my_photo img {
@@ -259,7 +251,14 @@ h4 {
     }
 
     .portfolio {
-        overflow-y:unset;
+        overflow-y: unset;
+    }
+}
+
+/* for phone */
+@media only screen and (max-width: 990px) {
+    .project {
+        grid-template-columns: 20rem 30rem;
     }
 }
 
@@ -269,16 +268,20 @@ h4 {
     
     /* projects */
     .project {
-        grid-template-columns: 15rem 22rem;
+        grid-template-columns: 14rem 15.7rem;
     }
 
     .portfolio .project .image img {
-        width: 14rem;
-        height: 12rem;
+        width: 12rem;
+        height: 10rem;
+    }
+
+    a {
+        font-size: 1.1rem;
     }
 
     p {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     } 
 
 
