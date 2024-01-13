@@ -297,6 +297,7 @@ h4 {
     .project {
         grid-template-columns: 13rem 20rem;
     }
+
     .portfolio .project .image img {
         width: 12rem;
         height: 10rem;
@@ -313,6 +314,7 @@ h4 {
         grid-template-columns: 23rem;
         justify-content: center;
         align-items: center;
+        /* margin: 4rem; */
     }
 
     .portfolio .project .image {
@@ -330,7 +332,7 @@ h4 {
 
     p {
         font-size: 1.2rem;
-        height: 10rem;
+        height: 7rem;
     } 
 
 }
