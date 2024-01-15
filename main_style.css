@@ -1,0 +1,335 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter:wght@100&family=Montserrat:wght@100;200&family=Nunito:wght@200&family=Pangolin&family=Playfair:ital,wght@0,300;1,300&family=Roboto+Slab&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Exo+2:wght@300&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand&display=swap');
+
+
+/* Global */
+    :root {
+        --primary-color: rgb(40, 102, 156);
+        --secondary-color: rgba(130, 177, 235, 0.7);
+        --font-color: rgb(103, 101, 103);
+        --border-radius: 5px;
+    }
+
+    html {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        width: 100%;
+        height: 100%;
+        min-height: 100vh; 
+        /* font-family: 'Inter', sans-serif; */
+        /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+        /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+        /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        /* letter-spacing: 4px; */
+    }
+
+    h1 {
+        font-weight: 600;
+        font-size:40px;
+        text-align: center;
+        color: var(--primary-color);
+        font-size: 3.1rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    p {
+        height: 3rem;
+        font-weight: 300;
+        text-align:justify;
+        font-size: 1.5rem;
+        color: var(--font-color);
+        margin: 0; 
+        overflow: scroll;
+        height: 8.4rem;
+
+        /* text-overflow: scroll; */
+        /* Required for text-overflow to do anything */
+        /* white-space: nowrap; */
+       /* resize: horizonvetal; */
+       
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--primary-color);
+        cursor: pointer;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+    .link {
+        display: flex;
+        align-items: center;
+        gap: 0.9rem;
+    }
+
+    i {
+        font-size: 2.4rem;
+        align-items: center;
+        margin: 1.2rem 0;
+        cursor: pointer;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    i:hover {
+        color: var(--secondary-color);
+        text-decoration: none;
+    }
+
+    section {
+        padding: 3rem 2rem;
+    }
+
+    hr { 
+        margin: 2rem 0;
+        border-top: 3px solid #abc5dd;
+    }
+
+
+/* End global */
+
+
+
+
+/******** Body ********/
+.body {
+    display: grid;
+    grid-template-columns: 38rem 82rem;
+    height: 100vh;
+    justify-content: center;
+}
+/* End body */
+
+
+
+/******** ABOUT ME section **********/
+.about_me {
+    position: sticky;
+    margin-right: 6rem;
+}
+
+.my_photo img {
+    width: 23rem;
+    border-radius: 50%;
+}
+
+.about_me div {
+    margin: 2rem;
+}
+
+
+/************* PORTFOLIO section ************/
+.portfolio {
+    text-align: left;
+    /* grid-auto-flow: column; */
+    /* grid-auto-columns: 35%; */
+    /* grid-template-rows: unset; */
+    /* grid-template-columns: unset; */
+    overflow-y: auto;
+}
+
+.project {
+    border: 5px solid #abc5dd;
+    display: grid;
+    grid-template-columns: 26em 48rem;
+    margin: 2rem 0;
+    border-radius: 14px;
+}
+
+.portfolio .project .image {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin: 2rem;
+
+}
+
+.portfolio .project .image img {
+    width: 23rem;
+    height: 19rem;
+    border-radius: 2rem;
+}
+
+
+/************ Smaller laptop screen  ***********/
+@media only screen and (max-width: 1900px) {
+    .body {
+        grid-template-columns: 26rem 70rem;
+    }
+
+    h1{
+        font-size: 2.8rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    /* About Me */
+    .about_me {
+        margin: 0;
+    }
+    
+    .my_photo img {
+        width: 21rem;
+    }
+    
+    .about_me div {
+        margin: 1rem;
+    }
+    
+    /* projects */
+    .project {
+        grid-template-columns: 25rem 37rem;
+    }
+
+    .portfolio .project .image img {
+        width: 22rem;
+    }
+}
+
+
+/*********** for ipad ***********/
+@media only screen and (max-width: 1500px) {
+    .body {
+        grid-template-columns: 27rem 55rem;
+        /* font-size: 1.2rem; */
+    }
+
+    h1 {
+        font-size: 2.4rem;
+    }
+
+
+    /* About Me */
+    .my_photo img {
+        width: 16.6rem;
+    }
+
+    /* projects */
+    .project {
+        grid-template-columns: 20rem 28rem;
+    }
+
+    .portfolio .project .image img {
+        width: 18rem;
+        height: 15rem;
+    }
+}
+
+
+/* smaller laptop screen */
+@media only screen and (max-width: 1200px) {
+    .body {
+        grid-template-columns:auto;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+     /* projects */
+    .project {
+        grid-template-columns: 23rem 38rem;
+    }
+    
+    h2 a {
+        font-size: 1.1rem;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .project {
+        grid-template-columns: 20rem 32rem;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    .project {
+        grid-template-columns: 20rem 26rem;
+    }
+
+
+}
+
+@media only screen and (max-width: 800px) {
+    .project {
+        grid-template-columns: 15rem 21rem;
+    }
+    .portfolio .project .image img {
+        width: 12rem;
+        height: 10rem;
+        margin: 0;
+    }
+}
+
+
+/* for phone */
+@media only screen and (max-width: 650px) {
+    .project {
+        grid-template-columns: 28rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .portfolio .project .image img {
+        width: 20rem;
+        margin: 0;
+    }
+}
+
+
+/* for phone */
+@media only screen and (max-width: 540px) {
+    
+    /* projects */
+    .project {
+        grid-template-columns: 23rem;
+    }
+
+    .portfolio .project .image {
+        width: 20rem;
+    }
+
+    a {
+        font-size: 1.1rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        height: 7rem;
+    } 
+
+}
