@@ -309,6 +309,10 @@ h2 a {
         align-items: center;
     }
 
+    .portfolio .project .image {
+        margin: 0;
+    }
+
     .portfolio .project .image img {
         width: 20rem;
         margin: 0;
