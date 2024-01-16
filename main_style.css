@@ -353,7 +353,7 @@ h2 a {
         grid-template-columns: 18rem;
     }
 
-    .portfolio .project .image {
+    .portfolio .project .image img{
         width: 16rem;
     }
 
