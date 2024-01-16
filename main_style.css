@@ -346,23 +346,23 @@ h2 a {
     } 
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 420px) {
     
     /* projects */
     .project {
-        grid-template-columns: 20rem;
+        grid-template-columns: 18rem;
     }
 
     .portfolio .project .image {
-        width: 18rem;
+        width: 16rem;
     }
 
     h3 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     h4 {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     a {
