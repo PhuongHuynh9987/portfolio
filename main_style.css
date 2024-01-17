@@ -372,14 +372,14 @@ ul {
     .project {
         grid-template-columns: 20rem 26rem;
     }
-
+/* 
     .portfolio .project .image img {
         width: 51rem;
-    }
+    }*/
 
-    .Ethereum .Ethereum-body section img  {
+    /* .Ethereum .Ethereum-body section img  {
         width: 48rem;
-    }
+    } */
 
 }
 
