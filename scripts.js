@@ -1,16 +1,15 @@
 
 
-$(document).ready(function(){
-    $('.menu-toggler').click(function() {
-        // $(this).toggleClass('open');
-        $('.top-nav').toggleClass('open');
-    })
+// $(document).ready(function(){
 
-    $('.top-nav li').click(function() {
-        $('.top-nav').removeClass('open');
-    })
 
-    $('.top-nav').click(function() {
-        $('.top-nav').removeClass('open');
-    })
+   
+
+// });
+
+var x = document.getElementById("Ethereum_link");
+
+x.addEventListener("click", function(){
+    document.getElementById("portfolio").style.display = "none";
+    document.getElementById("Ethereum").style.display = "grid";
 });
