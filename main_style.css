@@ -447,10 +447,9 @@ ul {
         font-size: 1.1rem;
     }
 
-    p, ul  {
+    /* p, ul  {
         font-size: 1rem;
-        height: 7rem;
-    } 
+    }  */
 
     .Ethereum .Ethereum-body section img {
         width: 22rem;
@@ -468,7 +467,7 @@ ul {
         width: 15rem;
     }
 
-    h3, h3 a {
+    h3, h3 a, p, ul  {
         font-size: 1.1rem;
     }
 
