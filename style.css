@@ -63,6 +63,7 @@ a {
 h1{
     text-align: center;
     color: var(--primary-color);
+    margin-bottom: 5rem;
 }
 
 p {
@@ -166,7 +167,9 @@ p {
         width: 24rem;
     }
 
-    
+    h1{
+        margin-bottom: 2.5rem;
+    }
     p{
         max-width: 24rem;
     }
