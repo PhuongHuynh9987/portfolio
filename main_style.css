@@ -178,11 +178,11 @@ h2 a {
         grid-template-columns: 26rem 70rem;
     }
 
-    h1{
+    h1 {
         font-size: 2.8rem;
     }
 
-    h3 {
+    h3, h3 a {
         font-size: 1.6rem;
     }
 
@@ -222,7 +222,6 @@ h2 a {
 @media only screen and (max-width: 1500px) {
     .body {
         grid-template-columns: 27rem 55rem;
-        /* font-size: 1.2rem; */
     }
 
     h1 {
@@ -338,11 +337,7 @@ h2 a {
         width: 18rem;
     }
 
-    h3 {
-        font-size: 1.4rem;
-    }
-
-    h3  a{
+    h3, h3 a {
         font-size: 1.4rem;
     }
 
@@ -362,7 +357,6 @@ h2 a {
 }
 
 @media only screen and (max-width: 430px) {
-    
     /* projects */
     .project {
         grid-template-columns: 18rem;
@@ -372,11 +366,7 @@ h2 a {
         width: 15rem;
     }
 
-    h3 {
-        font-size: 1.1rem;
-    }
-
-    h3 a{
+    h3, h3 a {
         font-size: 1.1rem;
     }
 

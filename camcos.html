@@ -15,47 +15,125 @@
 
     <div class="body">
         <h1>
-            Blockchain Ethereum Research
+            Ethereum Blockchain Research
         </h1>
 
         <!-- Introduction -->
         <section>
             <h2>I. Introduction</h2>
-            <p> <span class = 'span'> </span> This project is a part of the CAMCOS (Center for Applied Mathematics, 
-                Computation and Statistics) course offered by the Department of Mathematics and Statistics 
-                at San Jose State University. <br>
-                
-                <span class = 'span'> </span>  In this project, we are divided into two teams, a data and a theory 
-                team. While data team gathers data from BlockNative and performs data analysis and manipulation,
-                theory team uses the information in addition to throughout researches about Ethereum blockchain system
-                to analyze a possible solution, a forward inclusion list (FIL) design, imposed for censorship resistance. While
-                the main project can be found <a href="https://github.com/krzhang/camcos/tree/main/CAMCOS_2023F/Data_Exploration" target="_blank">here</a>, 
-                I have put together a side analysis myself to find important insights that could help me with the research.
+            <p> <span class = 'span'> </span> As part of the CAMCOS (Center for Applied Mathematics, 
+                Computation, and Statistics) course, this project is conducted by the Department 
+                of Mathematics and Statistics at San Jose State University, with sponsorship from 
+                Ethereum researchers. The primary objective is to attain censorship resistance.<br>
+
+                <span class = 'span'> </span> Within this project, we are organized into two teams: a data team and a theory team. The data team is 
+                responsible for collecting data from BlockNative, conducting data analysis, and performing data 
+                manipulation. Meanwhile, the theory team utilizes this information, along with comprehensive research 
+                on the Ethereum blockchain system, to analyze a potential solution—specifically, a forward inclusion 
+                list (FIL) design intended to enhance censorship resistance. While the primary project details can be accessed  
+                <a href="https://github.com/krzhang/camcos/tree/main/CAMCOS_2023F/Data_Exploration" target="_blank">here</a>, 
+                I have independently conducted a supplementary analysis to uncover crucial insights that may contribute to the overall 
+                research effort as a theory team member.
             </p>
+
         </section>
 
 
         <!-- Data Aggregating -->
         <section>
-            <h2> II. Data Aggregating</h2>
-            <p><span class = 'span'> </span> Firstly, I included the data in four days, September 4, 5 ,6, and 7. Then, 
-            I combined them as a same csv file.</p>
+            <h2> II. Data Aggregating and Processing</h2>
+            <p><span class = 'span'> </span> Firstly, I used the data files provided by the data team
+            to include the data from September 4th to September 7th for my analysis.</p>
             <img src="images/camcos-1.png" alt="">
+            <p><span class = 'span'> </span>After that, I combined the data into one csv file. 
+                The data information and data cleaning process detail can be found
+                <a href="https://github.com/PhuongHuynh9987/Ethereum-Blockchain-CAMCOS-project/blob/main/Code/Data-info-and-cleaning.ipynb" target="_blank">here. </a>
+                There was some data entry error and some unused columns dropped from the data frame that yeilds a complete table
+                containing only confirmed and failed transactions in only US-region. Here is the complete table. 
+            </p>
+            <img src="/images/camcos-3.png" alt="">
+
+
         </section>
-
-
-        <!-- Data Processing -->
-        <section>
-            <h2> III. Data Processing</h2>
-        </section>
-
 
         <!-- Data Analyzing -->
         <section>
-            <h2>IV. Data Analyzing</h2>
+            <h2>III. Data Analyzing</h2>
+            <p><span class = 'span'> </span> To explore the memory pool data, I gave myself some questions 
+                that could be answered through the data. </p>
+
+            <ul>
+                <li>How does the fluctuation in peak hours impact the base fee and mempool traffic? </li>
+                <li>Over the course of these three days, what is:</li>
+                <ol>
+                    <li> The average gas included in each block throughout a 24-hour period?
+                    <li> The base fee over a 24-hour duration?</li>
+                    <li> The amount of includable gas over the course of 24 hours?</li>
+                </ol>
+            </ul>
+                
+                
+            <p><span class = 'span'> </span>To focus on a 24-hour timeframe, I introduced an "hour" column to facilitate data 
+                grouping on an hourly basis. In the data processing phase, I utilized the confirmed transaction gas 
+                information to compute includable gas. This represents the gas available in the mempool that can be 
+                included into the current block. The algorithm involves deducting the block number at which a 
+                confirmed transaction is finalized ('curblocknumber') from the number of blocks the transaction 
+                had been waiting for inclusion. The gas from the transaction is then added to these waiting blocks, 
+                contributing to the includable gas.
+            </p>
+
+            <p><span class = 'span'> </span> After data processing, I used the information to create a dataframe that contains
+            average base fee, average includable gas per block, average blocksize (included gas in each block),
+            and average number of transaction in each block over 24 hours in those four days.</p>
+            
+            <img src="images/camcos-4.png" alt="">
+            
+            <p>Looking at the graphs, I notice that 
+                <ul>
+                    <li>the base fee reaches the highest at 3-9pm and lowest at about 1-9am, </li>
+                    <li>the block sizes (more gas in each block) are also the largest from 1 to 9pm,</li>
+                    <li>the includable gas in the mempool decreases over time as well as the number of 
+                        transactions in the mempool.</li>
+                </ul>
+            </p>
+
+            <p>The odd thing is, the block sizes are still high even though the includable gas decreases.
+                One possiblility is because of the private transaction. Private transactions are the transactions
+                that go directly to the validators without going through the mempool. I decided to seperate the
+                transactions that have the pending is zero (private transactions) and 
+                transactions that have the pending is greater than zero.  
+            </p>
+
+            <img src="images/camcos.png" alt="">
+
+           <p> The private transactions seem to stay consistent between the peaked hours and the slow hours.
+            This explains why the block sizes are high even though there is little includable gas in the mempool.
+           </p>
+
         </section>
 
-        ... to be continued!
+        <!-- Conclusion -->
+        <section>
+            <h2>IV. Conclusion</h2>
+             <p>This finding is personally meaningful to me. Private transactions uncover a hidden market working 
+            in parallel with mempool activities. This advantage gives blockchain workers the ability to create 
+            a secondary market, allowing them to bypass transactions susceptible to censorship. 
+            This presents a challenge to the censorship resistance of the Ethereum blockchain system (through topping-off market
+            and abusing the spirit of the FIL sections).
+           </p>
+
+           <p>Our team has created a comprehensive report featuring in-depth analysis supported by statistical
+            and mathematical evidence, along with effective documentation and research.
+            This <a href="https://hackmd.io/JuCR32GLTKK8I75FbYO04g">report</a> will guide readers from a brief introduction about blockchain and censorship to the FIL mechanism.
+           </p>
+        </section>
+
+      
+        <section>
+            <br>
+            <br>
+            <br>
+        </section>
     </div>
 </body>
 </html>
