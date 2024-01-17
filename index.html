@@ -165,8 +165,9 @@
                     <p><span class = 'span'> </span>After that, I combined the data into one csv file. 
                         The data information and data cleaning process detail can be found
                         <a href="https://github.com/PhuongHuynh9987/Ethereum-Blockchain-CAMCOS-project/blob/main/Code/Data-info-and-cleaning.ipynb" target="_blank">here. </a>
-                        There was some data entry error and some unused columns dropped from the data frame that yeilds a complete table
-                        containing only confirmed and failed transactions in only US-region. Here is the complete table. 
+                        There were data entry errors, and some unnecessary columns were removed from the data frame. 
+                        This produced a complete table that includes only confirmed and failed transactions in the US region. 
+                        Here is the complete table. 
                     </p>
                     <img src="images/camcos-2.png" alt="">
         
@@ -190,7 +191,7 @@
                     </ul>
                         
                         
-                    <p><span class = 'span'> </span>To focus on a 24-hour timeframe, I introduced an "hour" column to facilitate data 
+                    <p><span class = 'span'> </span>To focus on a 24-hour timeframe, I created an "hour" column to facilitate data 
                         grouping on an hourly basis. In the data processing phase, I utilized the confirmed transaction gas 
                         information to compute includable gas. This represents the gas available in the mempool that can be 
                         included into the current block. The algorithm involves deducting the block number at which a 
@@ -207,9 +208,9 @@
                     
                     <p>Looking at the graphs, I notice that 
                         <ul>
-                            <li>the base fee reaches the highest at 3-9pm and lowest at about 1-9am, </li>
-                            <li>the block sizes (more gas in each block) are also the largest from 1 to 9pm,</li>
-                            <li>the includable gas in the mempool decreases over time as well as the number of 
+                            <li>the base fee reaches the highest at between 3-9 pm and hits its lowest point around 1-9 am,</li>
+                            <li>the block sizes (total gas included in each block) are largest from 1 to 9 pm,</li>
+                            <li>the includable gas in the mempool decreases over time, along with a reduction in the number of 
                                 transactions in the mempool.</li>
                         </ul>
                     </p>
