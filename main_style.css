@@ -26,7 +26,7 @@
 
     h1 {
         font-weight: 600;
-        font-size:40px;
+        font-size: 40px;
         text-align: center;
         color: var(--primary-color);
         font-size: 3.1rem;
@@ -401,6 +401,9 @@ ul {
 
 /* for phone */
 @media only screen and (max-width: 650px) {
+    h1 {
+        font-size: 1.8rem;
+    }
     .project {
         grid-template-columns: 26rem;
         justify-content: center;
